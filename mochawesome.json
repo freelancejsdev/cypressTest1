@@ -1,0 +1,127 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-02-07T08:54:54.073Z",
+    "end": "2021-02-07T08:55:08.798Z",
+    "duration": 14694,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8ad40b28-28c0-479f-8cfa-ec3651064476",
+      "title": "",
+      "fullFile": "cypress/integration/cypressBasics/VerifyUrlPageTitle.spec.js",
+      "file": "cypress/integration/cypressBasics/VerifyUrlPageTitle.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c19a194e-09ab-4060-9eb2-e68430f3aaf1",
+          "title": "Verify Page Title and Verify Url",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify Page Title",
+              "fullTitle": "Verify Page Title and Verify Url Verify Page Title",
+              "timedOut": null,
+              "duration": 4192,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.title().should('include', Cypress.env('homePageTitle'));",
+              "err": {},
+              "uuid": "02721986-901d-49bb-bc64-e8bb998dc187",
+              "parentUUID": "c19a194e-09ab-4060-9eb2-e68430f3aaf1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify Url",
+              "fullTitle": "Verify Page Title and Verify Url Verify Url",
+              "timedOut": null,
+              "duration": 10502,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.ico-register').click();\ncy.url().should('include', 'register?returnUrl=%2F');",
+              "err": {},
+              "uuid": "38f91ee3-7d9a-4b67-8bd4-28a296a913a4",
+              "parentUUID": "c19a194e-09ab-4060-9eb2-e68430f3aaf1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "02721986-901d-49bb-bc64-e8bb998dc187",
+            "38f91ee3-7d9a-4b67-8bd4-28a296a913a4"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 14694,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "reporterEnabled": "mochawesome",
+        "mochawesomeReporterOptions": {
+          "queit": true,
+          "overwrite": false,
+          "html": false,
+          "json": true
+        }
+      },
+      "version": "5.1.0"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+    "baseUrl":"https://demo.nopcommerce.com/",
+    "viewportWidth": 1536,
+    "viewportHeight": 960,
+    "reporter":"mochawesome",
+    "reporterOptions":{
+       
+        "mochawesomeReporterOptions": {
+         
+          "queit": true,
+          "overwrite": false,
+          "html": false,
+          "json": true
+        }
+    }
+    
+    
+}
